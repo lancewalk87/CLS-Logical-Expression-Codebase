@@ -8,3 +8,4 @@ D:\CLS\CLS-Logical-Expression-Codebase-master\LogicalQuestions-C#\LogicalQuestio
 D:\CLS\CLS-Logical-Expression-Codebase-master\LogicalQuestions-C#\LogicalQuestions\LogicalQuestions\obj\Release\netcoreapp2.1\LogicalQuestions.AssemblyInfo.cs
 D:\CLS\CLS-Logical-Expression-Codebase-master\LogicalQuestions-C#\LogicalQuestions\LogicalQuestions\obj\Release\netcoreapp2.1\LogicalQuestions.dll
 D:\CLS\CLS-Logical-Expression-Codebase-master\LogicalQuestions-C#\LogicalQuestions\LogicalQuestions\obj\Release\netcoreapp2.1\LogicalQuestions.pdb
+D:\CLS\CLS-Logical-Expression-Codebase-master\LogicalQuestions-C#\LogicalQuestions\LogicalQuestions\obj\Release\netcoreapp2.1\LogicalQuestions.csprojAssemblyReference.cache
