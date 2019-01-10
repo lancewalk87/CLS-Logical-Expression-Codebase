@@ -21,6 +21,18 @@ namespace LogicalQuestions {
             return result; 
         }
 
+        /* Recursion  */
+        static int Recursive(int value, ref int count)
+        {
+            count++; 
+            if (value >= 10)
+            {
+                return value;
+            }
+            return Recursive(value + 1, ref count); 
+        }
+
+
        //  palindrome* test_results = null; 
 
         static void Main(string[] args) {
@@ -34,6 +46,15 @@ namespace LogicalQuestions {
                 palindrome res = getResult(i);
                 Console.WriteLine("TESTING: {0}, {1} A PALINDROME", i, res.msg); 
             }
+
+            // Recursion
+            int count = 0;
+            int total = Recursive(5, ref count);
+
+            Console.WriteLine("total: {0}, count: {1}",total, count);
+
+            // End Tests: 
+            Console.WriteLine("COMPLETE: ALL TASKS"); 
         }
     }
 }
