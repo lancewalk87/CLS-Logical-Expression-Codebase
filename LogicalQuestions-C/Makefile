@@ -1,13 +1,25 @@
+
 CC      = gcc
 CFLAGS  = -g
 RM      = rm -f
 
-default: all
+# paths:
 
-all: Hello
+# scripts
+debug:
 
-Hello: Hello.c
-    $(CC) $(CFLAGS) -o Hello Hello.c
+runall:
 
-clean veryclean:
-    $(RM) Hello
+destory:
+
+
+
+# default: all
+#
+# all: Hello
+#
+# Hello: Hello.c
+#     $(CC) $(CFLAGS) -o Hello Hello.c
+#
+# clean veryclean:
+#     $(RM) Hello
