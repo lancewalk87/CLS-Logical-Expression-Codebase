@@ -1,5 +1,3 @@
-package main
-
 // =============================================================
 // LogicalExpressions - GO
 // main.go
@@ -8,20 +6,14 @@ package main
 // Copyright © 2018 CodeLife-Productions. All rights reserved.
 // =============================================================
 
-import (
-	"fmt"
-	// packages:
-	// "./services"
-  // "./utils"
-)
+#import <stdio.h>
 
-/*** System Properties ***/
-const (
-	VERSION string = "1.0.0"
-)
-
-/*** System Methods ***/
-// ===> Entry:
-func main() {
-  fmt.Println("main.go: Starting");
+@interface main {
 }
+#pragma mark - Methods
+
+@end
+
+@implementation main
+
+@end

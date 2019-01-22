@@ -1,27 +1,8 @@
-package main
 
 // =============================================================
-// LogicalExpressions - GO
-// main.go
+// LogicalExpressions - JavaScript
+// main.js
 // =============================================================
 // Created by Lance T. Walker on 1/19/2019
 // Copyright © 2018 CodeLife-Productions. All rights reserved.
 // =============================================================
-
-import (
-	"fmt"
-	// packages:
-	// "./services"
-  // "./utils"
-)
-
-/*** System Properties ***/
-const (
-	VERSION string = "1.0.0"
-)
-
-/*** System Methods ***/
-// ===> Entry:
-func main() {
-  fmt.Println("main.go: Starting");
-}
