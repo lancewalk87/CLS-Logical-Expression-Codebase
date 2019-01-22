@@ -10,13 +10,13 @@ package services
 
 /*** Properties: Algorithms ***/
 type Result struct { // Defines entry, and final array
-	initial, final []int
+  // Sorted_MinMax
 }
 
 type Sort interface { // Sort Types
-	bubble_sort() []int
-	heap_sort() []int
-	insertion_sort() []int
+	bubble_sort() []int      // swap upon condition of invariant defined (i.e. range of numbers)
+	heap_sort() []int        // sort binary tree based upon spec. comparison (i.e. range of numbers)
+	insertion_sort() []int   //
 	merge_sort() []int
 	quick_sort() []int
 	selection_sort() []int
@@ -25,14 +25,24 @@ type Sort interface { // Sort Types
 }
 
 /*** Methods ***/
-func algorithm() {
-
-}
 
 /*** Definitions ***/
-// func (ent Result) bubble_sort() []int {
+func Bubblesort(ent []int) []int {
+  compl := true
+  arr := ent;
 
-// }
+  for compl {
+    compl = false;
+    for i := 1; i < len(arr) - 1; i++ {
+      if arr[i + 1] < arr[i] {
+        tmp := arr;
+        arr[i], arr[i + 1] = tmp[i + 1], tmp[i]
+        compl = true
+      }
+    }
+  }
+  return arr;
+}
 
 // func (ent Result) heap_sort() []int {
 

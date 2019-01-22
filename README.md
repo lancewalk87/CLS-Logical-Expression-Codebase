@@ -46,5 +46,18 @@ Expressed Languages:
 CLI Application Command Structure:
 ---------------------------
 
+Ubiquitously applied algorithms:  
+---------------------------
+| Name        | Average Complexity    | Worst Complexity | Basic Definition                                      |
+| ----------- | --------------------- | ---------------- | ----------------------------------------------------- |
+| Selection   | n^2                   | n^2              | O time complex                                        |
+| Insertion   | n^2                   | n^2              | product build one increment per operation             |
+| Bubble      | n^2                   | n^2              | swap pairs in list upon full incrementation of input  |
+| Quick       | n*log(n)              | n^2              |  O efficient, ordering list                           |
+| Heap        | n*log(n)              | n*log(n)         | sorts heap binary tree by comparing size of max input |   
+| Merge       | n*log(n)              | n*log(n)         | divides complex input to smaller subset problems      |
+| Shell       | n*log(n)^2 or n^(3/2) | n/a              | complex application of general sort algorithm         |
+| Topological | n/a                   | n/a              | linear order of input vertices                        |
+
 Notable References, Documentation, and Manuals:
 ---------------------------
