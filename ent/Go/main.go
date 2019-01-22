@@ -19,9 +19,11 @@ import (
 const (
 	VERSION string = "1.0.0"
 )
+const Algorithms = Services.Algorithms;
 
 /*** System Methods ***/
 // ===> Entry:
 func main() {
   fmt.Println("main.go: Starting");
+
 }
