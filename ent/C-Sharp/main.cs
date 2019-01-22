@@ -9,7 +9,23 @@
 using System; 
 namespace Main {
     class main {
+        static bool isPalindrome(String ent) {
+            int leng = ent.Length(); 
+            for (int i = 0; i < leng/2; i++) {
+                if (ent[i] != ent[leng - i]) {
+                    return false; 
+                }
+            }
+            return true; 
+        }
+
         static void Main() {
+            bool check = isPalindrome("racecar"); 
+            if (check) {
+                Console.WriteLine("THIS IS A PALINDROME");
+            } else {
+                Console.WriteLine("THIS IS NOT A PALINDROME"); 
+            } 
             Console.WriteLine("Starting"); 
         }
     }

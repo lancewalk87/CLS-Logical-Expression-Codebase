@@ -23,6 +23,31 @@ const (
 // const Algorithms = Services.Algorithms;
 
 /*** System Methods ***/
+func isPalindrome(ent string) string {
+	leng := len(ent)
+	for i := 0; i < leng/2; i++ {
+		if ent[i] != ent[leng-1-i] {
+			return "THIS IS NOT A PALINDROME"
+		}
+	}
+	return "THIS IS A PALINDROME"
+}
+
+func fib(n int) int {
+	fn := make(map[int]int)
+	for i := 0; i <= n; i++ {
+		var f int
+		if i <= 2 {
+			f = 1
+		} else {
+			f = fn[i-1] + fn[i-2]
+		}
+		fn[i] = f
+		println("new fib: ", f)
+	}
+	return fn[n]
+}
+
 // ===> Entry:
 func main() {
 	fmt.Println("main.go: Starting")
@@ -32,17 +57,12 @@ func main() {
 	newArrary := Services.Bubblesort(array)
 	fmt.Println("final arrary: ", newArrary)
 
-	// compl := true;
-	// fmt.Println("initial arrary: ", array)
-	// for compl {
-	//   compl = false;
-	//   for i := 0; i < len(array) - 1; i++ {
-	//     if array[i + 1] < array[i] {
-	//       tmp := array;
-	//       array[i], array[i + 1] = tmp[i + 1], tmp[i];
-	//       compl = true;
-	//     }
-	//   }
-	// }
-	// fmt.Println("final array: ", array)
+	strings := []string{"racecar", "one", "two", "mom", "1221", "121121"}
+	for _, str := range strings {
+		fmt.Println("RESULT OF TEST: ", str, isPalindrome(str))
+	}
+
+	// fib
+	var x = fib(100)
+	println(x)
 }
