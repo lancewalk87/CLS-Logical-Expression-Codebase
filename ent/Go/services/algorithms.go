@@ -8,66 +8,55 @@ package services
 // Copyright © 2018 CodeLife-Productions. All rights reserved.
 // =============================================================
 
-/*** Properties: Algorithms ***/
-type Result struct { // Defines entry, and final array
-  // Sorted_MinMax
-}
+// | Selection   | n^2                   | n^2              | O time complex                                        |
+// | Insertion   | n^2                   | n^2              | product build one increment per operation             |
+// | Bubble      | n^2                   | n^2              | swap pairs in list upon full incrementation of input  |
+// | Quick       | n*log(n)              | n^2              |  O efficient, ordering list                           |
+// | Heap        | n*log(n)              | n*log(n)         | sorts heap binary tree by comparing size of max input |
+// | Merge       | n*log(n)              | n*log(n)         | divides complex input to smaller subset problems      |
+// | Shell       | n*log(n)^2 or n^(3/2) | n/a              | complex application of general sort algorithm         |
+// | Topological | n/a                   | n/a              | linear order of input vertices
 
-type Sort interface { // Sort Types
-	bubble_sort() []int      // swap upon condition of invariant defined (i.e. range of numbers)
-	heap_sort() []int        // sort binary tree based upon spec. comparison (i.e. range of numbers)
-	insertion_sort() []int   //
-	merge_sort() []int
-	quick_sort() []int
-	selection_sort() []int
-	shell_sort() []int
-	topological_sort() []int
+/*** Properties ***/
+type Types struct {
+	Str []string // string arrary     {}=Nullable
+	Int []int    // integer arrary    {}=Nullable
 }
 
 /*** Methods ***/
+// func Selectionsort(ent Types) Types {
 
-/*** Definitions ***/
+// }
+// func Insertionsort(ent Types) Types {
+
+// }
 func Bubblesort(ent []int) []int {
-  compl := true
-  arr := ent;
-
-  for compl {
-    compl = false;
-    for i := 1; i < len(arr) - 1; i++ {
-      if arr[i + 1] < arr[i] {
-        tmp := arr;
-        arr[i], arr[i + 1] = tmp[i + 1], tmp[i]
-        compl = true
-      }
-    }
-  }
-  return arr;
+	compl := true
+	for compl {
+		compl = false
+		for i := 0; i < len(ent)-1; i++ {
+			if ent[i+1] < ent[i] {
+				tmp := ent
+				ent[i], ent[i+1] = tmp[i+1], tmp[i]
+				compl = true
+			}
+		}
+	}
+	return ent
 }
 
-// func (ent Result) heap_sort() []int {
+// func Quicksort(ent Types) Types {
 
 // }
-
-// func (ent Result) insertion_sort() []int {
-
-// }
-
-// func (ent Result) merge_sort() []int {
+// func Heapsort(ent Types) Types {
 
 // }
-
-// func (ent Result) quick_sort() []int {
-
-// }
-
-// func (ent Result) selection_sort() []int {
+// func Mergesort(ent Types) Types {
 
 // }
-
-// func (ent Result) shell_sort() []int {
+// func Shellsort(ent Types) Types {
 
 // }
-
-// func (ent Result) topological_sort() []int {
+// func Topologicalsort(ent Types) Types {
 
 // }
