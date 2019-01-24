@@ -39,9 +39,9 @@ func fib(n int) int {
 	return fn[n];
 }
 
-// ===> Entry:
+// Entry ===>
 func main() {
-	fmt.Println("main.go: Starting")
+	fmt.Println("main.go: starting")
   //
 	// array := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
 	// fmt.Println("initial array: ", array)

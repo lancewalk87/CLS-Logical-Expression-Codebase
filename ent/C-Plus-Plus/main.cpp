@@ -6,9 +6,11 @@
 // Copyright © 2018 CodeLife-Productions. All rights reserved.
 // =============================================================
 
-#include <stdio.h>
+#include <iostream>
+// #include <stdio.h>
+using namespace std;
 
-int main(int argc, char* argv[]) {
-    
-    return 0; 
+int main() {
+  cout << "main.cpp: starting";
+  return 0;
 }
