@@ -11,8 +11,9 @@ package main
 import (
 	"fmt"
 	// packages:
-	Services "./services"
-	// Utilities "./utils"
+	// Services "./services"
+  Usecases "./usecases"
+  // Problems "./problems"
 )
 
 /*** System Properties ***/
@@ -41,18 +42,20 @@ func fib(n int) int {
 // ===> Entry:
 func main() {
 	fmt.Println("main.go: Starting")
-
-	array := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
-	fmt.Println("initial array: ", array)
-	newArrary := Services.Bubblesort(array)
-	fmt.Println("final arrary: ", newArrary)
-
-	strings := []string{"racecar", "one", "two", "mom", "1221", "121121"}
-	for _, str := range strings {
-		fmt.Println("RESULT OF TEST: ", str, isPalindrome(str))
-	}
+  //
+	// array := []int{1, 6, 2, 4, 9, 0, 5, 3, 7, 8}
+	// fmt.Println("initial array: ", array)
+	// newArrary := Services.Bubblesort(array)
+	// fmt.Println("final arrary: ", newArrary)
+  //
+	// strings := []string{"racecar", "one", "two", "mom", "1221", "121121"}
+	// for _, str := range strings {
+	// 	fmt.Println("RESULT OF TEST: ", str, isPalindrome(str))
+	// }
 
 	// fib
-	var x = fib(500)
-	println(x)
+	// var x = fib(500)
+	// println(x)
+
+  string := Usecases.toUpperCase("abcdefghijklmnopqrstuvwxyz")
 }
