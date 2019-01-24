@@ -9,16 +9,26 @@
 # =============================================================
 
 import os, sys
-modules = ['./usecases', './services', './problems']
-for path in modules:
-  sys.path.insert(0, path)
-import algorithms
-import checks, conversions
-import project_euler
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Entry ===>
-def main():
-  print "main.py: Starting"
+import services as Services
+import usecases as Usecases
+import problems as Problems
+#
+# ### Entry ===>
+# def main():
+#   print "main.py: starting"
+# main()
 
-if __name__ == "__main__":
-  main()
+class Main(object):
+  def __init__(self, filename):
+    self.file = open(filename)
+
+  def __enter__(self):
+    self.file.close()
+
+  def __exit__(self, ctx_type, ctx_value, ctx_traceback):
+    self.file.close()
+
+with Main('file') as f:
+  contents = f.read()

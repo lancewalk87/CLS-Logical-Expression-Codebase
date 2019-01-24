@@ -1,18 +1,25 @@
+using System;
 // =============================================================
 // LogicalExpressions - CS
-// main.cs
+// algorithmns.cs
 // =============================================================
 // Created by Lance T. Walker on 1/22/2019
 // Copyright © 2018 CodeLife-Productions. All rights reserved.
 // =============================================================
 
-using System; 
+namespace Services {
+    class Algorithms {
 
-namespace LogicalExpressions {    
-    class Application {
-        static void Main(string[] args) {
-            
-            Console.WriteLine("main.cs: starting"); 
-        }
+    }
+
+    interface IAlgorithms<T> {
+        void SelectionSort();
+        void InsertionSort();
+        void BubbleSort();
+        void QuickSort();
+        void HeapSort();
+        void MergeSort();
+        void ShellSort(); 
+        TopologicalSort(); 
     }
 }
