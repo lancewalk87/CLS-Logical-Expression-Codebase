@@ -5,7 +5,7 @@ package main
 // main.go
 // =============================================================
 // Created by Lance T. Walker on 1/19/2019
-// Copyright © 2018 CodeLife-Productions. All rights reserved.
+// Copyright © 2019 CodeLife-Productions. All rights reserved.
 // =============================================================
 
 import (
@@ -23,16 +23,6 @@ const (
 // const Algorithms = Services.Algorithms;
 
 /*** System Methods ***/
-func isPalindrome(ent string) string {
-	leng := len(ent)
-	for i := 0; i < leng/2; i++ {
-		if ent[i] != ent[leng-1-i] {
-			return "THIS IS NOT A PALINDROME"
-		}
-	}
-	return "THIS IS A PALINDROME"
-}
-
 func fib(n int) int {
 	fn := make(map[int]int)
 	for i := 0; i <= n; i++ {
@@ -45,7 +35,7 @@ func fib(n int) int {
 		fn[i] = f
 		println("new fib: ", f)
 	}
-	return fn[n]
+	return fn[n];
 }
 
 // ===> Entry:
@@ -63,6 +53,6 @@ func main() {
 	}
 
 	// fib
-	var x = fib(100)
+	var x = fib(500)
 	println(x)
 }

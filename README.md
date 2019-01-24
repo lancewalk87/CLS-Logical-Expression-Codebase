@@ -3,14 +3,14 @@
 **This repository contains solutions to common use cases and challenges within computer science, and explores each of these solutions through multiple languages and methodologies.**
 
 Project Structure:
----------------------------
+------------------
 * [bin](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/bin): **contains executables**
 * [scr](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/scr): **contains maintenance scripts**
 * [src](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/src): **contains CLI Application**
 * [ent](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/ent): **contains Language Build Instructions**
 
 Expressed Languages:
----------------------------
+-------------------
 
 |     Language      | Ext.      | Attributes      | SRC Shortcuts                                                                                                  | REF Shortcuts |
 | ----------------- | --------- | --------------- | -------------------------------------------------------------------------------------------------------------- | ------------- |
@@ -44,10 +44,10 @@ Expressed Languages:
 | LW        | Light Weight       |  
 
 CLI Application Command Structure:
----------------------------
+----------------------------------
 
 Ubiquitously applied algorithms:  
----------------------------
+--------------------------------
 | Name        | Average Complexity    | Worst Complexity | Basic Definition                                      |
 | ----------- | --------------------- | ---------------- | ----------------------------------------------------- |
 | Selection   | n^2                   | n^2              | O time complex                                        |
@@ -60,4 +60,11 @@ Ubiquitously applied algorithms:
 | Topological | n/a                   | n/a              | linear order of input vertices                        |
 
 Notable References, Documentation, and Manuals:
----------------------------
+-----------------------------------------------
+
+Problems
+--------
+* [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) ***Fundamental principles of Computer Science.***  
+* [An Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition) ***General introduction to algorithms and their applications..***
+* [Concrete mathematics](https://www.csie.ntu.edu.tw/~r97002/temp/Concrete%20Mathematics%202e.pdf) ***Concepts of Computer Science from a mathematical perspective.***
+* [Project Euler](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/problems/project_euler.md) ***A website dedicated to the fascinating world of mathematics and programming.***
