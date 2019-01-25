@@ -1,5 +1,4 @@
 package services
-
 // =============================================================
 // LogicalExpressions - GO
 // data_structures.go

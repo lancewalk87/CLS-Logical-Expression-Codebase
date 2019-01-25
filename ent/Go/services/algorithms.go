@@ -1,5 +1,4 @@
 package services
-
 // =============================================================
 // LogicalExpressions - GO
 // algorithms.go
