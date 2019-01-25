@@ -2,46 +2,55 @@
 
 ###### **This repository contains solutions to common problems, use cases and challenges within the field of computer science, and explores each of these solutions through multiple languages and methodologies.** In addition to the language specific sources, the project is designed to be built from a CLI, provided you have each of the necessary binaries installed to your bash source, you should have no trouble running the application.
 
-Running from CLI:
------------------
+Running the CLI Application:
+----------------------------
 
 Project Structure:
 ------------------
-* [**src**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/src): CLI Application Source.
+* [**cli**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/cli): CLI Application Source.
+  ```
+  ├── bin                    
+  ├── scr
+  │   ├── build/
+  │   └── system/
+  └── src
+  ```
 * [**ent**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent): Language Build Sources.
   ```
-  ├── ent
-  │   ├── lang
-  │   │   ├── main.(ext)
+  ├── input
+  │   ├── *lang
+  │   │   ├── main.*ext
   │   │   ├── problems/
   │   │   ├── services/
   │   │   └── usecases/
+  └── output
   ```
-* [**scr**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/scr): Maintenance/Build Scripts.  
-* [**bin**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/bin): CLI Application Binaries.
 * [**docs**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ref): Project Documentation.
+  ```
+
+  ```
 
 Expressed Languages:
 -------------------
 
 |     Language      | Ext.      | Attributes      | Source Shortcuts                                                                                               | Language References |
 | ----------------- | --------- | --------------- | -------------------------------------------------------------------------------------------------------------- | ------------------- |
-| C                 | .C        | GP, I, ST       | [ent/C](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/C)                      | [Jump To](https://www.cprogramming.com/)
-| C-Plus-Plus       | .CPP      | GP, I, ST, OO   | [ent/C-Plus-Plus](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/C-Plus-Plus)  | [Jump To](http://www.cplusplus.com/)
-| C-Sharp           | .CS       | GP, I, MP, OO   | [ent/C-Sharp](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/C-Sharp)          | [Jump To](https://docs.microsoft.com/en-us/dotnet/csharp/)
-| Objective-C       | .M        | GP, OO          | [ent/Objective-C](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Objective-C)  | [Jump To](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html)
-| Swift             | .SWIFT    | GP, MP          | [ent/Swift](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Swift)              | [Jump To](https://swift.org/)
-| Java              | .JAVA     | GP, OO          | [ent/Java](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Java)                | [Jump To](https://docs.oracle.com/javase/tutorial/)
-| Kotlin            | .KT       | ST, GP, TI      | [ent/Kotlin](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Kotlin)            | [Jump To](https://kotlinlang.org/)
-| JavaScript        | .JS       | GP, MP          | [ent/JavaScript](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/JavaScript)    | [Jump To](https://www.javascript.com/)
-| PHP               | .PHP      | SCR             | [ent/PHP](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/PHP)                  | [Jump To](http://www.php.net/)
-| Python            | .PY       | GP              | [ent/Python](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Python)            | [Jump To](https://www.python.org/)
-| Ruby              | .RB       | GP, OO          | [ent/Ruby](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Ruby)                | [Jump To](https://www.ruby-lang.org/en/)
-| Go                | .GO       | GP, ST          | [ent/Go](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Go)                    | [Jump To](https://golang.org/)
-| Scala             | .SCALA    | GP, ST          | [ent/Scala](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Scala)              | [Jump To](https://www.scala-lang.org/)
-| Lua               | .LUA      | MP, LW          | [ent/Lua](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Lua)                  | [Jump To](https://www.lua.org/)
-| Rust              | .RS       | MP              | [ent/Rust](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Rust)                | [Jump To](https://www.rust-lang.org/)
-| Perl              | .PERL     | GP              | [ent/Perl](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/Perl)                | [Jump To](https://www.perl.org/)
+| C                 | .C        | GP, I, ST       | [ent/C](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/C)                      | [Jump To](https://www.cprogramming.com/)
+| C-Plus-Plus       | .CPP      | GP, I, ST, OO   | [ent/C-Plus-Plus](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/C-Plus-Plus)  | [Jump To](http://www.cplusplus.com/)
+| C-Sharp           | .CS       | GP, I, MP, OO   | [ent/C-Sharp](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/C-Sharp)          | [Jump To](https://docs.microsoft.com/en-us/dotnet/csharp/)
+| Objective-C       | .M        | GP, OO          | [ent/Objective-C](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Objective-C)  | [Jump To](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjectiveC/Introduction/introObjectiveC.html)
+| Swift             | .SWIFT    | GP, MP          | [ent/Swift](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Swift)              | [Jump To](https://swift.org/)
+| Java              | .JAVA     | GP, OO          | [ent/Java](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Java)                | [Jump To](https://docs.oracle.com/javase/tutorial/)
+| Kotlin            | .KT       | ST, GP, TI      | [ent/Kotlin](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Kotlin)            | [Jump To](https://kotlinlang.org/)
+| JavaScript        | .JS       | GP, MP          | [ent/JavaScript](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/JavaScript)    | [Jump To](https://www.javascript.com/)
+| PHP               | .PHP      | SCR             | [ent/PHP](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/PHP)                  | [Jump To](http://www.php.net/)
+| Python            | .PY       | GP              | [ent/Python](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Python)            | [Jump To](https://www.python.org/)
+| Ruby              | .RB       | GP, OO          | [ent/Ruby](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Ruby)                | [Jump To](https://www.ruby-lang.org/en/)
+| Go                | .GO       | GP, ST          | [ent/Go](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Go)                    | [Jump To](https://golang.org/)
+| Scala             | .SCALA    | GP, ST          | [ent/Scala](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Scala)              | [Jump To](https://www.scala-lang.org/)
+| Lua               | .LUA      | MP, LW          | [ent/Lua](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Lua)                  | [Jump To](https://www.lua.org/)
+| Rust              | .RS       | MP              | [ent/Rust](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Rust)                | [Jump To](https://www.rust-lang.org/)
+| Perl              | .PERL     | GP              | [ent/Perl](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ent/input/Perl)                | [Jump To](https://www.perl.org/)
 
 | Shorthand | Definition         |
 | --------- | ------------------ |

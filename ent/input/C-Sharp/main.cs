@@ -11,7 +11,6 @@ using System;
 namespace LogicalExpressions {    
     class Application {
         static void Main(string[] args) {
-            
             Console.WriteLine("main.cs: starting"); 
         }
     }

@@ -20,6 +20,6 @@ namespace Services {
         void HeapSort();
         void MergeSort();
         void ShellSort(); 
-        TopologicalSort(); 
+        void TopologicalSort(); 
     }
 }
