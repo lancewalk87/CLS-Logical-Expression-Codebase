@@ -1,38 +1,10 @@
 // =============================================================
-// LogicalExpressions - GO
-// main.go
+// LogicalExpressions - Objective-C
+// main.m
 // =============================================================
-// Created by Lance T. Walker on 1/19/2019
-// Copyright © 2018 CodeLife-Productions. All rights reserved.
+// Created by Lance T. Walker on 1/24/2019
+// Copyright © 2019 CodeLife-Productions. All rights reserved.
 // =============================================================
-
-// #import <Foundation/Foundation.h>
-//
-// @interface Person : NSObject {
-// @private
-//   char *name;
-// }
-// @property(readwrite, assign) char *name;
-// - (void)sayHello;
-// @end
-//
-// @implementation Person
-// @synthesize name;
-//
-// - (void)sayHello {
-//   printf("Hello, my name is %s!\n", [self name]);
-// }
-// @end
-//
-// int main() {
-//   Person *brad = [Person new];
-//   brad.name = "Brad Cox";
-//   [brad sayHello];
-//
-//   Person *tom = [Person new];
-//   tom.name = "Tom Love";
-//   [tom sayHello];
-// }
 
 #include <Foundation/Foundation.h>
 

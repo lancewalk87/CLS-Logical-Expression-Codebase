@@ -19,7 +19,7 @@ Project Structure:
   ```
 * [**scr**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/scr): Maintenance/Build Scripts.  
 * [**bin**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/bin): CLI Application Binaries.
-* [**doc**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ref): Project Resources.
+* [**docs**](https://github.com/lancewalk87/CLS-Logical-Expression-Codebase/tree/master/ref): Project Documentation.
 
 Expressed Languages:
 -------------------

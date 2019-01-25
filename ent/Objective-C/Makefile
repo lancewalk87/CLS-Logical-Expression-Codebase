@@ -1,13 +1,15 @@
-GCC=clang 
-
-FRAMEWORKS:= -framework Foundation
+CC = gcc
+SOURCES=Src/OSX/main.m
+FRAMEWORKS:= -framework Foundation -framework Cocoa -framework AppKit
 LIBRARIES:= -lobjc
-
-SOURCE=main.m
-
-CFLAGS=-Wall -Werror -g -v $(SOURCE)
+CFLAGS=-Wall -Werror -arch i386 -g -v $(SOURCES)
 LDFLAGS=$(LIBRARIES) $(FRAMEWORKS)
-OUT=-o main
+OUT=-o Build/main
 
-all:
-    $(CC) $(CFLAGS) $(LDFLAGS) $(OUT)
+all: $(SOURCES) $(OUT)
+
+$(OUT): $(OBJECTS)
+  $(CC) -o $(OBJECTS) $@ $(CFLAGS) $(LDFLAGS) $(OUT)
+
+.m.o:
+  $(CC) -c -Wall $< -o $@
