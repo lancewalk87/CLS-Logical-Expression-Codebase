@@ -1,6 +1,6 @@
 # Logical Expression Codebase
 
-###### **This repository contains solutions to common problems, use cases and challenges within the field of computer science, and explores each of these solutions through multiple languages and methodologies.** In addition to the language specific sources, the project is designed to be built from a CLI, provided you have each of the necessary binaries installed to your bash source, you should have no trouble running the application.
+###### ***This repository contains solutions to common problems, use cases and challenges within the field of computer science, and explores each of these solutions through multiple languages and methodologies.*** In addition to the language specific sources, the project is designed to be built from a CLI, provided you have each of the necessary binaries installed to your bash source, you should have no trouble running the application.
 
 Running the CLI Application:
 ----------------------------
